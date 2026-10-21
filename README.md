@@ -1,55 +1,81 @@
-Superstore Sales & Profitability Analysis
+# Superstore Sales & Profitability Analysis
 
+An interactive Power BI dashboard exploring retail sales performance, profitability, product trends, and regional results using the Sample Superstore dataset.
 
-Project Overview
+## Project Overview
 
-An interactive Power BI dashboard built to explore retail sales performance, profitability, product-level trends, and regional results using the Sample Superstore dataset.
+This project analyzes retail transaction data to understand what drives sales performance, which product categories contribute to profitability, and where the business experiences losses.
 
-Business Objectives
+The dashboard is designed to help users explore business performance through interactive visuals and filters.
 
-- Monitor overall sales, profit, order volume, and profit margin.
-- Compare sales across product categories.
-- Evaluate profitability across regions and sub-categories.
-- Explore how product discounts relate to profitability.
-- Identify products and sub-categories that may need further investigation.
+## Tools & Technologies
 
-Tools Used
+- **Power BI** — dashboard design and data visualization
+- **Power Query** — data preparation and data type management
+- **DAX** — measures and business calculations
 
-- Power BI Desktop
-- Power Query for data preparation
-- DAX for measures and KPI calculations
-- Sample Superstore dataset
+## Dashboard Pages
 
-Dashboard Pages
+### 1. Executive Overview
 
-1. Executive Overview
-Provides KPI cards, monthly sales trends, category-level sales comparisons, and regional profitability, with interactive filters.
+Provides a high-level view of business performance, including:
 
-2. Product Profitability
-Explores sub-category profit, the relationship between discounts and product profit, and a product-level performance table.
+- Total Sales
+- Total Profit
+- Total Quantity
+- Order Count
+- Customer Count
+- Monthly sales trends
+- Sales by category
+- Profit by region
 
-Initial Observations
+**Interactive filters:** Order Date, Region, and Segment.
 
-- Tables, Bookcases, and Supplies show negative overall profit in the sub-category chart.
-- Tables is the largest loss-making sub-category in the current report.
-- Both profitable and loss-making products appear at different discount levels; discount alone does not explain every loss.
-- Product-level results can help identify items that merit further profitability analysis.
+### 2. Product Profitability
 
-Screenshots
+Examines product and sub-category performance to help identify profitable products and areas of concern.
 
-Executive Overview
-(screenshots/executive-overview.png)
+- Profit by sub-category
+- Product-level sales and profit comparison
+- Average discount versus total profit
+- Product table with sales, profit, quantity, and average discount
 
-Product Profitability
-(screenshots/product-profitability.png)
+**Interactive filters:** Category, Sub-Category, and Segment.
 
-How to View
+## Key Findings
 
-Open `Superstore_Sales_Analysis.pbix` in Power BI Desktop to explore the interactive dashboard.
+- The Tables sub-category is a notable loss-making area in the analyzed data.
+- Bookcases and Supplies also show negative profit in the dashboard.
+- Product profitability varies, so sales volume alone is not enough to evaluate performance.
+- The discount-versus-profit comparison shows both profitable and loss-making products at different discount levels. Discount alone should not be treated as proof of the cause of losses.
 
-## Data Source
-Sample Superstore dataset. Add the original dataset download/source link here and include any applicable attribution or usage terms.
+## Screenshots
 
-Notes
+### Executive Overview
 
-This project is for portfolio and learning purposes. Findings describe the dataset and do not establish the causes of losses.
+![Executive Overview Dashboard](executive-overview.png)
+
+### Product Profitability
+
+![Product Profitability Dashboard](product-profitability.png)
+
+## Dataset
+
+The project uses the Sample Superstore dataset.
+
+[View the dataset source on GitHub Gist](https://gist.github.com/SharmaAshwini/8bd642f6c46792a9c40c8ccad60391e9)
+
+## Files Included
+
+- `Superstore_Sales_Analysis.pbix` — Power BI project file
+- `executive-overview.png` — Executive Overview screenshot
+- `product-profitability.png` — Product Profitability screenshot
+- `README.md` — Project documentation
+
+## Skills Demonstrated
+
+Data preparation, data modeling fundamentals, DAX measures, KPI reporting, interactive dashboard development, exploratory business analysis, and communicating data-driven findings.
+
+---
+
+*Created as a portfolio project to demonstrate practical Power BI and business data analysis skills.*
